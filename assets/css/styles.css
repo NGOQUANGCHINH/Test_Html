@@ -5,5 +5,85 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1, 6rem;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Sen", sans-serif; */
+}
+/* ==============common================ */
+a {
+  text-decoration: none;
+}
+/* căn 2 lề  */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  /* xác định chiều rộng tối thiểu */
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* =================header================ */
+/* tác động class body con của header  */
+.header .header-body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.header{
+  /* background: #FFFCF4; */
+background: #c79409;
+}
+.header.fixed {
+  position: sticky;
+  top:-28px;
+}
+.nav > ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::before {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: black;
+  border-radius: 1px;
+}
+.header .btn-sign-up {
+  border-radius: 999px;
+}
+.header .btn-sign-up:hover {
+  background-color: yellow;
+  color: black;
+  border: 1px solid black;
+  border: none;
+}
+.header .action{
+  margin-left:41px;
 }
